@@ -68,7 +68,7 @@ This project is for educational purposes only. Netflix and all related marks and
 
 ## Author
 
-Created with ❤️ as a learning project
+Created as a learning project
 
 ---
 
