@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-content">
+            <div class="logo">NETFLIX</div>
+            <nav class="nav">
+                <a href="#" class="active">Home</a>
+                <a href="#">TV Shows</a>
+                <a href="#">Movies</a>
+                <a href="#">New & Popular</a>
+                <a href="#">My List</a>
+            </nav>
+            <div class="header-right">
+                <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="profile">
+                    <img src="https://i.pravatar.cc/40?img=33" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg" style="background: url('https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=1920&q=80') center/cover;">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Stranger Things</h1>
+            <p class="hero-description">
+                When a young boy vanishes, a small town uncovers a mystery involving secret experiments, 
+                terrifying supernatural forces, and one strange little girl.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-play">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    Play
+                </button>
+                <button class="btn btn-info">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    More Info
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Rows -->
+    <main class="content">
+        <section class="row">
+            <h2 class="row-title">Trending Now</h2>
+            <div class="row-slider">
+                <div class="movie-card" data-title="The Witcher" data-year="2019" data-rating="8.2">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>The Witcher</h3>
+                        <div class="card-stats">
+                            <span class="match">98% Match</span>
+                            <span class="year">2019</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Wednesday" data-year="2022" data-rating="8.1">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Wednesday</h3>
+                        <div class="card-stats">
+                            <span class="match">95% Match</span>
+                            <span class="year">2022</span>
+                            <span class="rating">TV-14</span>
+                        </div>
+                        <p class="card-description">Follow Wednesday Addams' years as a student at Nevermore Academy.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Breaking Bad" data-year="2008" data-rating="9.5">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Breaking Bad</h3>
+                        <div class="card-stats">
+                            <span class="match">99% Match</span>
+                            <span class="year">2008</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">A chemistry teacher diagnosed with cancer turns to making meth.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="The Crown" data-year="2016" data-rating="8.6">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1519817650390-64a93db51149?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>The Crown</h3>
+                        <div class="card-stats">
+                            <span class="match">92% Match</span>
+                            <span class="year">2016</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">Follows the political rivalries and romance of Queen Elizabeth II's reign.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Money Heist" data-year="2017" data-rating="8.2">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Money Heist</h3>
+                        <div class="card-stats">
+                            <span class="match">96% Match</span>
+                            <span class="year">2017</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">An unusual group of robbers attempt to carry out the most perfect robbery.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Squid Game" data-year="2021" data-rating="8.0">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Squid Game</h3>
+                        <div class="card-stats">
+                            <span class="match">94% Match</span>
+                            <span class="year">2021</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">Hundreds of cash-strapped players accept a strange invitation to compete.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <h2 class="row-title">Popular on Netflix</h2>
+            <div class="row-slider">
+                <div class="movie-card" data-title="Dark" data-year="2017" data-rating="8.7">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Dark</h3>
+                        <div class="card-stats">
+                            <span class="match">97% Match</span>
+                            <span class="year">2017</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">A family saga with a supernatural twist, set in a German town.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Ozark" data-year="2017" data-rating="8.5">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Ozark</h3>
+                        <div class="card-stats">
+                            <span class="match">95% Match</span>
+                            <span class="year">2017</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">A financial advisor drags his family to the Ozarks after a money-laundering scheme.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Peaky Blinders" data-year="2013" data-rating="8.8">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1514849302-984523450cf4?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Peaky Blinders</h3>
+                        <div class="card-stats">
+                            <span class="match">96% Match</span>
+                            <span class="year">2013</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">A gangster family epic set in 1900s England, centering on a gang.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Narcos" data-year="2015" data-rating="8.8">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1542396601-dca920ea2807?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Narcos</h3>
+                        <div class="card-stats">
+                            <span class="match">93% Match</span>
+                            <span class="year">2015</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="The Umbrella Academy" data-year="2019" data-rating="8.0">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1533928298208-27ff66555d8d?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>The Umbrella Academy</h3>
+                        <div class="card-stats">
+                            <span class="match">91% Match</span>
+                            <span class="year">2019</span>
+                            <span class="rating">TV-14</span>
+                        </div>
+                        <p class="card-description">A dysfunctional family of superheroes reunite to solve their father's death.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Black Mirror" data-year="2011" data-rating="8.7">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Black Mirror</h3>
+                        <div class="card-stats">
+                            <span class="match">94% Match</span>
+                            <span class="year">2011</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">An anthology series exploring a twisted, high-tech multiverse.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <h2 class="row-title">Award-Winning Series</h2>
+            <div class="row-slider">
+                <div class="movie-card" data-title="The Last of Us" data-year="2023" data-rating="8.8">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>The Last of Us</h3>
+                        <div class="card-stats">
+                            <span class="match">97% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">Joel and Ellie must survive ruthless killers in a pandemic-ravaged America.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Succession" data-year="2018" data-rating="8.9">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Succession</h3>
+                        <div class="card-stats">
+                            <span class="match">98% Match</span>
+                            <span class="year">2018</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">The Roy family controls a media and entertainment empire.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="The Mandalorian" data-year="2019" data-rating="8.6">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1579566346927-c68383817a25?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>The Mandalorian</h3>
+                        <div class="card-stats">
+                            <span class="match">96% Match</span>
+                            <span class="year">2019</span>
+                            <span class="rating">TV-PG</span>
+                        </div>
+                        <p class="card-description">The travels of a lone bounty hunter in the outer reaches of the galaxy.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Better Call Saul" data-year="2015" data-rating="9.0">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Better Call Saul</h3>
+                        <div class="card-stats">
+                            <span class="match">99% Match</span>
+                            <span class="year">2015</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">The trials of a criminal lawyer, six years before Breaking Bad.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="Vikings" data-year="2013" data-rating="8.5">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>Vikings</h3>
+                        <div class="card-stats">
+                            <span class="match">92% Match</span>
+                            <span class="year">2013</span>
+                            <span class="rating">TV-MA</span>
+                        </div>
+                        <p class="card-description">Vikings transports us to the brutal world of Ragnar Lothbrok.</p>
+                    </div>
+                </div>
+                <div class="movie-card" data-title="The Office" data-year="2005" data-rating="9.0">
+                    <div class="card-image" style="background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80') center/cover;"></div>
+                    <div class="card-info">
+                        <h3>The Office</h3>
+                        <div class="card-stats">
+                            <span class="match">98% Match</span>
+                            <span class="year">2005</span>
+                            <span class="rating">TV-14</span>
+                        </div>
+                        <p class="card-description">A mockumentary on a group of typical office workers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Audio Description</a>
+                <a href="#">Help Center</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Media Center</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Jobs</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <p class="copyright">&copy; 2026 Netflix, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
